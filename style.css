@@ -1,0 +1,573 @@
+/* ==========================================================================
+   Variáveis de Cores (Tema Dark Luxury) & Novas Fontes Aristocráticas
+   ================================================================---------- */
+:root {
+    --cor-primaria: #dfb185;         /* Dourado Metálico Sofisticado */
+    --cor-primaria-hover: #c99b6d;   
+    --cor-fundo: #0a0a0a;            /* Preto Absoluto / Dark Profundo */
+    --cor-fundo-alt: #141414;        /* Cinza Carvão Suave para blocos alternados */
+    --cor-superficie: #1a1a1a;       /* Superfície de cards e elementos */
+    --cor-texto: #e5e5e5;            /* Texto claro de alta leitura */
+    --cor-texto-leve: #999999;       /* Cinza neutro para legendas */
+    --cor-branco: #ffffff;
+    
+    --fonte-titulo: 'Cormorant Garamond', serif;     /* Tipografia Serifada de Luxo */
+    --fonte-texto: 'Plus Jakarta Sans', sans-serif;  /* Tipografia Moderna e Limpa */
+    
+    --sombra-dark: 0 10px 30px rgba(0, 0, 0, 0.6);
+    --sombra-dourada: 0 8px 25px rgba(223, 177, 133, 0.25);
+    --transicao-suave: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   Reset & Configurações Globais
+   ================================================================---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.text-center { text-align: center; }
+.bg-dark-alt { background-color: var(--cor-fundo-alt); }
+.subtitulo { 
+    color: var(--cor-texto-leve); 
+    margin-bottom: 50px; 
+    font-size: 1.15em; 
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+/* ==========================================================================
+   Botões Modernos Dark
+   ================================================================---------- */
+.btn-primario {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 38px;
+    background-color: var(--cor-primaria);
+    color: #121212;
+    text-decoration: none;
+    font-size: 1.05em;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: var(--transicao-suave);
+    box-shadow: var(--sombra-dourada);
+}
+
+.btn-primario:hover {
+    background-color: var(--cor-primaria-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(223, 177, 133, 0.4);
+}
+
+/* ==========================================================================
+   Cabeçalho / Menu (Glassmorphism Dark)
+   ================================================================---------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 10, 10, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transicao-suave);
+    z-index: 1000;
+}
+
+header.rolagem {
+    background: rgba(15, 15, 15, 0.95);
+    box-shadow: 0 4px 25px rgba(0,0,0,0.5);
+    padding: 16px 50px;
+    border-bottom: 1px solid rgba(223, 177, 133, 0.1);
+}
+
+.logo {
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    color: var(--cor-branco);
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: var(--transicao-suave);
+}
+
+.logo span { color: var(--cor-primaria); }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 500;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: var(--transicao-suave);
+}
+
+.nav-list a:hover {
+    color: var(--cor-primaria);
+}
+
+.menu-toggle {
+    display: none;
+    color: var(--cor-branco);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   Seção Principal (Hero)
+   ================================================================---------- */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(10,10,10,0.9), rgba(10,10,10,0.5)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.hero-content {
+    max-width: 680px;
+    color: var(--cor-branco);
+}
+
+.badge-urgencia {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(223, 177, 133, 0.15);
+    border: 1px solid rgba(223, 177, 133, 0.3);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-bottom: 24px;
+    backdrop-filter: blur(8px);
+    letter-spacing: 0.5px;
+    color: var(--cor-primaria);
+}
+
+.badge-urgencia i { color: var(--cor-primaria); }
+
+.hero-content h1 {
+    font-size: 4.8em;
+    line-height: 1.05;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.hero-content p {
+    font-size: 1.15em;
+    margin-bottom: 35px;
+    font-weight: 300;
+    color: var(--cor-texto-leve);
+}
+
+/* ==========================================================================
+   Seções Gerais
+   ================================================================---------- */
+.secao { padding: 120px 0; }
+.secao h2 {
+    font-size: 3.2em;
+    margin-bottom: 15px;
+    color: var(--cor-branco);
+    letter-spacing: -0.5px;
+}
+
+/* ==========================================================================
+   Sobre Nós
+   ================================================================---------- */
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.sobre-img { flex: 1; }
+.sobre-img img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 25px 25px 0px rgba(223, 177, 133, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transicao-suave);
+}
+
+.sobre-texto { flex: 1; }
+.sobre-texto h2 span { color: var(--cor-primaria); font-style: italic; }
+.sobre-texto p { margin-bottom: 20px; color: var(--cor-texto-leve); }
+
+.vantagens { list-style: none; margin-top: 30px; }
+.vantagens li { margin-bottom: 14px; display: flex; align-items: center; gap: 14px; font-weight: 400; color: var(--cor-texto); }
+.vantagens i { color: var(--cor-primaria); font-size: 1.25em; }
+
+/* ==========================================================================
+   Grid de Serviços & Cards Alinhados
+   ================================================================---------- */
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+    align-items: stretch; /* Garante que todos os cards tenham a mesma altura */
+}
+
+.card-servico {
+    background: var(--cor-superficie);
+    padding: 45px 32px;
+    border-radius: 20px;
+    transition: var(--transicao-suave);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o conteúdo inferior para o rodapé do card */
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--sombra-dark);
+}
+
+.card-servico.destaque {
+    background: #1e1b18;
+    border: 2px solid var(--cor-primaria);
+    box-shadow: 0 20px 45px rgba(223, 177, 133, 0.15);
+}
+
+.badge-card {
+    position: absolute;
+    top: 18px;
+    right: -35px;
+    background: var(--cor-primaria);
+    color: #121212;
+    font-size: 0.65em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 35px;
+    transform: rotate(45deg);
+    letter-spacing: 1px;
+}
+
+.card-servico:hover {
+    transform: translateY(-8px);
+    border-color: rgba(223, 177, 133, 0.3);
+}
+
+.icone-servico {
+    font-size: 42px;
+    color: var(--cor-primaria);
+    margin-bottom: 24px;
+}
+
+.card-servico h3 { margin-bottom: 12px; font-size: 1.8em; color: var(--cor-branco); }
+.card-servico p { color: var(--cor-texto-leve); font-size: 0.95em; margin-bottom: 24px; }
+
+.preco {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    margin-bottom: 24px;
+}
+
+.btn-agendar-servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px;
+    background-color: transparent;
+    border: 1px solid var(--cor-primaria);
+    color: var(--cor-primaria);
+    text-decoration: none;
+    border-radius: 35px;
+    font-weight: 500;
+    transition: var(--transicao-suave);
+}
+
+.btn-agendar-servico:hover {
+    background-color: var(--cor-primaria);
+    color: #121212;
+}
+
+/* ==========================================================================
+   Galeria de Fotos
+   ================================================================---------- */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transicao-suave);
+}
+
+.grid-galeria img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+    border-color: var(--cor-primaria);
+}
+
+/* ==========================================================================
+   Depoimentos
+   ================================================================---------- */
+.grid-depoimentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.card-depoimento {
+    background: var(--cor-superficie);
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: var(--sombra-dark);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.estrelas {
+    color: var(--cor-primaria);
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.card-depoimento p { font-style: italic; margin-bottom: 24px; color: var(--cor-texto-leve); }
+.card-depoimento h4 { color: var(--cor-branco); font-weight: 600; font-size: 1.1em; }
+
+/* ==========================================================================
+   FAQ (Perguntas Frequentes)
+   ================================================================---------- */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: var(--cor-superficie);
+    margin-bottom: 18px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    box-shadow: var(--sombra-dark);
+    transition: var(--transicao-suave);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 22px 28px;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-family: var(--fonte-texto);
+    font-size: 1.08em;
+    font-weight: 600;
+    color: var(--cor-branco);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question i {
+    color: var(--cor-primaria);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s ease;
+    padding: 0 28px;
+    color: var(--cor-texto-leve);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 180px;
+    padding-bottom: 24px;
+}
+
+/* ==========================================================================
+   Rodapé & Contato
+   ================================================================---------- */
+.footer-contato { background-color: #050505; color: var(--cor-texto); padding-bottom: 80px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.footer-contato h2 { color: var(--cor-branco); }
+
+.grid-contato { align-items: stretch; gap: 50px; }
+.info-contato { flex: 1; }
+.info-item { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+.info-item i { font-size: 22px; color: var(--cor-primaria); }
+.info-item p { color: var(--cor-texto-leve); }
+
+.redes-sociais {
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    width: 45px;
+    height: 45px;
+    background-color: var(--cor-superficie);
+    color: var(--cor-branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: var(--transicao-suave);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.redes-sociais a:hover {
+    background-color: var(--cor-primaria);
+    color: #121212;
+    border-color: var(--cor-primaria);
+    transform: translateY(-3px);
+}
+
+.mapa-contato {
+    flex: 1;
+    min-height: 380px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--sombra-dark);
+}
+
+.copyright {
+    text-align: center;
+    padding: 25px;
+    background-color: #020202;
+    color: #666;
+    font-size: 0.88em;
+    border-top: 1px solid rgba(255,255,255,0.03);
+}
+
+/* ==========================================================================
+   Botão WhatsApp Flutuante
+   ================================================================---------- */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    background-color: #25d366;
+    color: white;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+    text-decoration: none;
+    z-index: 1000;
+    animation: pulse-whatsapp 2.5s infinite;
+    transition: var(--transicao-suave);
+}
+
+@keyframes pulse-whatsapp {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { transform: scale(1.06); box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-btn:hover { transform: scale(1.12); animation: none; }
+
+/* ==========================================================================
+   Animações (Scroll Reveal)
+   ================================================================---------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   Responsividade Avançada
+   ================================================================---------- */
+@media (max-width: 991px) {
+    .d-flex { flex-direction: column; gap: 40px; }
+    .hero-content h1 { font-size: 3.5em; }
+    .grid-contato { flex-direction: column; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+    header { padding: 18px 20px; background: rgba(10, 10, 10, 0.95); }
+    .menu-toggle { display: block; color: var(--cor-branco) !important; }
+    
+    .nav-list {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background-color: var(--cor-fundo-alt);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transition: var(--transicao-suave);
+        box-shadow: -10px 0 30px rgba(0,0,0,0.8);
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .nav-list.active { right: 0; }
+    .nav-list a { color: var(--cor-branco) !important; font-size: 15px; }
+    
+    .hero { padding: 0 20px; text-align: center; }
+    .hero-content h1 { font-size: 2.7em; }
+    .secao h2 { font-size: 2.4em; }
+    .secao { padding: 90px 0; }
+}

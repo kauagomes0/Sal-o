@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Elegance | Salão de Beleza e Estética</title>
+    
+    <!-- Fontes de Alto Padrão (Cormorant Garamond & Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Menu -->
+    <header id="header">
+        <div class="logo">Studio <span>Elegance</span></div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#faq">Dúvidas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content reveal">
+            <span class="badge-urgencia"><i class="fas fa-fire"></i> Agenda de horários aberta para esta semana</span>
+            <h1>Sua beleza levada a sério</h1>
+            <p>Descubra a sua melhor versão com nossos especialistas em cabelos, maquiagem e estética. Um momento só seu, com o luxo que você merece.</p>
+            <a href="https://wa.me/5514996886175?text=Olá,%20gostaria%20de%20agendar%20um%20horário!" target="_blank" class="btn-primario">
+                <i class="fab fa-whatsapp"></i> Agendar Horário
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="secao sobre">
+        <div class="container d-flex">
+            <div class="sobre-img reveal">
+                <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Interior do Salão">
+            </div>
+            <div class="sobre-texto reveal">
+                <h2>Muito mais que um salão, <br>uma <span>experiência</span>.</h2>
+                <p>Fundado em 2015, o Studio Elegance é referência em beleza feminina. Nosso objetivo é proporcionar um atendimento personalizado, entendendo o desejo de cada cliente e realçando sua beleza natural.</p>
+                <ul class="vantagens">
+                    <li><i class="fas fa-check-circle"></i> Ambiente Climatizado e Wi-Fi</li>
+                    <li><i class="fas fa-check-circle"></i> Produtos Premium (Keune, Wella, L'Oréal)</li>
+                    <li><i class="fas fa-check-circle"></i> Café e Drinks de cortesia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="secao bg-dark-alt">
+        <div class="container text-center reveal">
+            <h2>Nossos Serviços</h2>
+            <p class="subtitulo">Escolha o seu procedimento e agende diretamente pelo WhatsApp.</p>
+            
+            <div class="grid-servicos">
+                <div class="card-servico">
+                    <div>
+                        <i class="fas fa-cut icone-servico"></i>
+                        <h3>Cabelos</h3>
+                        <p>Cortes visagistas, escova, penteados para festas e tratamentos profundos.</p>
+                    </div>
+                    <div>
+                        <div class="preco">A partir de R$ 90,00</div>
+                        <a href="https://wa.me/5514996886175?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20o%20serviço%20de%20Cabelos!" target="_blank" class="btn-agendar-servico">
+                            <i class="fab fa-whatsapp"></i> Agendar Serviço
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-servico destaque">
+                    <span class="badge-card">Mais Procurado</span>
+                    <div>
+                        <i class="fas fa-paint-brush icone-servico"></i>
+                        <h3>Colorimetria</h3>
+                        <p>Morena iluminada, loiro saudável, correção de cor e mechas criativas.</p>
+                    </div>
+                    <div>
+                        <div class="preco">A partir de R$ 250,00</div>
+                        <a href="https://wa.me/5514996886175?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20o%20serviço%20de%20Colorimetria!" target="_blank" class="btn-agendar-servico">
+                            <i class="fab fa-whatsapp"></i> Agendar Serviço
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-servico">
+                    <div>
+                        <i class="fas fa-wind icone-servico"></i>
+                        <h3>Escova Modelada</h3>
+                        <p>Escova com acabamento impecável, modelagem com babyliss ou escova lisa duradoura.</p>
+                    </div>
+                    <div>
+                        <div class="preco">A partir de R$ 80,00</div>
+                        <a href="https://wa.me/5514996886175?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20o%20serviço%20de%20Escova%20Modelada!" target="_blank" class="btn-agendar-servico">
+                            <i class="fab fa-whatsapp"></i> Agendar Serviço
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-servico">
+                    <div>
+                        <i class="fas fa-eye icone-servico"></i>
+                        <h3>Pigmentação</h3>
+                        <p>Pigmentação e design personalizado para sobrancelhas com efeito natural e duradouro.</p>
+                    </div>
+                    <div>
+                        <div class="preco">A partir de R$ 95,00</div>
+                        <a href="https://wa.me/5514996886175?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20o%20serviço%20de%20Pigmentação!" target="_blank" class="btn-agendar-servico">
+                            <i class="fab fa-whatsapp"></i> Agendar Serviço
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-servico">
+                    <div>
+                        <i class="fas fa-spa icone-servico"></i>
+                        <h3>Estética</h3>
+                        <p>Limpeza de pele, massagem relaxante, drenagem e design de sobrancelhas.</p>
+                    </div>
+                    <div>
+                        <div class="preco">A partir de R$ 70,00</div>
+                        <a href="https://wa.me/5514996886175?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20o%20serviço%20de%20Estética!" target="_blank" class="btn-agendar-servico">
+                            <i class="fab fa-whatsapp"></i> Agendar Serviço
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-servico">
+                    <div>
+                        <i class="fas fa-hand-sparkles icone-servico"></i>
+                        <h3>Nails (Unhas)</h3>
+                        <p>Manicure, pedicure, alongamento em gel, fibra de vidro e esmaltação em gel.</p>
+                    </div>
+                    <div>
+                        <div class="preco">A partir de R$ 45,00</div>
+                        <a href="https://wa.me/5514996886175?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20o%20serviço%20de%20Nails!" target="_blank" class="btn-agendar-servico">
+                            <i class="fab fa-whatsapp"></i> Agendar Serviço
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Galeria (Portfólio) -->
+    <section id="galeria" class="secao">
+        <div class="container text-center reveal">
+            <h2>Nosso Trabalho</h2>
+            <p class="subtitulo">Confira algumas de nossas transformações.</p>
+            
+            <div class="grid-galeria">
+                <img src="img/bela-mulher-loira-com-cabelo-ondulado-e-pele-brilhante_23-2151989148.avif" alt="Cabelo Loiro">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=500&q=60" alt="Maquiagem">
+                <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=500&q=60" alt="Penteado">
+                <img src="img/tendencias-de-unhas-paintedbycourtney_469289483_18479493703044861_4336711951625633685_n-1240x1680.jpg" alt="Unhas">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="secao depoimentos bg-dark-alt">
+        <div class="container text-center reveal">
+            <h2>O que dizem nossas clientes</h2>
+            <div class="grid-depoimentos">
+                <div class="card-depoimento">
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Melhor salão da cidade! O atendimento é impecável e o resultado do meu cabelo loiro ficou perfeito. Me senti uma rainha."</p>
+                    <h4>- Mariana Ribeiro</h4>
+                </div>
+                <div class="card-depoimento">
+                    <div class="estrelas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Fiz minha maquiagem e penteado de noiva no Studio Elegance. A equipe me acalmou e me deixou lindíssima para o meu grande dia!"</p>
+                    <h4>- Camila Fernandes</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção FAQ -->
+    <section id="faq" class="secao">
+        <div class="container text-center reveal">
+            <h2>Dúvidas Frequentes</h2>
+            <p class="subtitulo">Tudo o que você precisa saber antes de nos visitar.</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">Preciso agendar horário com antecedência? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Sim! Recomendamos o agendamento prévio via WhatsApp para garantir o melhor horário para você, embora às vezes tenhamos encaixes de última hora.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Quais são as formas de pagamento aceitas? <i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Aceitamos Pix, cartões de crédito e débito (parcelamos procedimentos acima de R$ 200,00) e dinheiro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato / Rodapé -->
+    <section id="contato" class="secao footer-contato">
+        <div class="container d-flex grid-contato reveal">
+            
+            <div class="info-contato">
+                <h2>Venha nos visitar</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Rua das Flores, 123 - Centro<br>São Paulo - SP, 01000-000</p>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>(14) 99688-6175</p>
+                </div>
+                <div class="info-item">
+                    <i class="far fa-clock"></i>
+                    <p>Segunda a Sábado: 09:00 às 19:00<br>Domingo: Fechado</p>
+                </div>
+                
+                <div class="redes-sociais">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="mapa-contato">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1973682970597!2d-46.66179378496739!3d-23.561330984682855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>&copy; 2026 Studio Elegance. Todos os direitos reservados. Desenvolvido com ❤️.</p>
+    </div>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5514996886175?text=Olá,%20gostaria%20de%20agendar%20um%20horário!" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
